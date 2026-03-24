@@ -19,15 +19,26 @@ class ViewController: UIViewController {
         // Set the dice image and the alpha value
         //The icon itself is a "image literal".  Create by typing: #imageLiteral(
         //Don't forget the capital "L"
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView1.alpha = 0.25
+        // diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        // diceImageView1.alpha = 0.25
         
         // Set dice2
-        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+       // diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
         
         
     }
 
-
+    @IBAction func rollButtonedPressed(_ sender: UIButton) {
+        //diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
+        //diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+        // print("Button got tapped")
+        diceImageView1.image =  [UIImage(named: "DiceOne"),
+                                 UIImage(named: "DiceTwo"),
+                                 UIImage(named: "DiceThree"),
+                                 UIImage(named: "DiceFour"),
+                                 UIImage(named: "DiceFive"),
+                                 UIImage(named: "DiceSix")][2]
+    }
+    
 }
 
