@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     // Ctrl Drage the image to here so you can reference it.
     @IBOutlet weak var diceImageView2: UIImageView!
     @IBOutlet weak var diceImageView1: UIImageView!
+    
+    // Create variables
+    var diceLeftNumber = 3
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,7 +40,7 @@ class ViewController: UIViewController {
                                  UIImage(named: "DiceThree"),
                                  UIImage(named: "DiceFour"),
                                  UIImage(named: "DiceFive"),
-                                 UIImage(named: "DiceSix")][2]
+                                 UIImage(named: "DiceSix")][diceLeftNumber]
     }
     
 }
